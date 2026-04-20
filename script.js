@@ -16,5 +16,13 @@ document.addEventListener("DOMContentLoaded",() =>{
             const data = reponse.json()
             return data
         }
+
+        function displayWeatherData(data) {
+         const { name, main, weather } = data;
+
+        cityNameDisplay.textContent = name;
+        temperatureDisplay.textContent = `Temperature: ${main.temp}`;
+        descriptionDisplay.textContent = `Weather: ${weather[0].description}`;
+}
     })
 })
