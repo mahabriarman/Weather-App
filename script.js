@@ -55,3 +55,4 @@ document.addEventListener("DOMContentLoaded", () => {
         descriptionDisplay.textContent = `Weather: ${weather?.[0]?.description || "N/A"}`;
     }
 });
+console.log("push test");
